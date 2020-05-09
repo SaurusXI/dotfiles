@@ -1,6 +1,8 @@
 # dotfiles
-My dotfiles for an Arch setup.
+![Arch](screenshot.jpg)
 
+
+My dotfiles for Arch
 ## Applications
 Applications I usually install on a minimal Arch setup. Yours could be different, but you'll find config files for many of these applications here. Feel free to use them if you'd like. 
 - bspwm with sxhkd
