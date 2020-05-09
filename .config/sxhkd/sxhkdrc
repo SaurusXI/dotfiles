@@ -1,0 +1,35 @@
+# Spawn a terminal
+alt + Return
+	alacritty
+
+# make sxhkd reload its configs
+alt + Escape
+	pkill -USR1 -x sxhkd
+
+# for rofi
+alt + p
+	rofi -show run
+
+# quit/restart bspwm
+shift + super + {q, r}
+	bspc {quit,wm -r}
+
+# close and kill
+alt + {_,shift + }q
+	bspc node -{c,k}
+
+# Preselect direction
+super + shift + {w,a,s,d}
+	bspc node -p {north,west,south,east}
+
+# Window state modifiers
+alt + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# Focus different desktop
+super + {1-9}
+	bspc desktop --focus '^{1-9}'
+
+# send the window to a given desktop
+super + shift + {1-9}
+	bspc node -d '^{1-9}'
